@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "this will be where I test my stuff out!",
+	"authors": [
+		"CyberEye746"
+	],
+	"contact": {
+		"homepage": "none",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cybereye746.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.cybereye746.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.cybereye746.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

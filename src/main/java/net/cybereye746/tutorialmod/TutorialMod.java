@@ -13,5 +13,9 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		
+	@Override
+	public void onInitialize() {
+		ModBlocks.registerModBlocks();
 	}
 }
